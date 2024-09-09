@@ -240,3 +240,14 @@ summaryLength = 10
   siteparam.test.text = "A **nested** option <b>with</b> formatting"
   # Extension to the image effects only for the docs.
   imageEffects.bg-white = true
+
+
+# -------------------------------------------------------------------------------------
+# Modules Configuration
+# See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
+# -------------------------------------------------------------------------------------
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.132.0"
