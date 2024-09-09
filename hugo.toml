@@ -11,48 +11,6 @@ title = "梵刹 - 个人学习心得分享"
 theme = "relearn"
 
 [params]
-  additionalContentLanguage = ['en']
-  alwaysopen = ''
-  breadcrumbSeparator = '>'
-  collapsibleMenu = true
-  customMathJaxURL = ''
-  customMermaidURL = ''
-  customOpenapiURL = ''
-  disableAnchorCopy = false
-  disableAnchorScrolling = false
-  disableAssetsBusting = false
-  disableBreadcrumb = false
-  disableDefaultRelref = false
-  disableExplicitIndexURLs = false
-  disableGeneratorVersion = false
-  disableHoverBlockCopyToClipBoard = false
-  disableInlineCopyToClipBoard = true
-  disableLandingPageButton = true
-  disableLanguageSwitchingButton = false
-  disableMathJax = true
-  disableMermaid = true
-  disableNextPrev = false
-  disableOpenapi = true
-  disableRandomIds = false
-  disableRootBreadcrumb = true
-  disableSearch = false
-  disableSearchHiddenPages = false
-  disableSeoHiddenPages = true
-  disableShortcutsTitle = false
-  disableTagHiddenPages = false
-  disableTermBreadcrumbs = false
-  disableToc = false
-  editURL = 'https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/${FilePath}'
-  externalLinkTarget = '_self'
-  highlightWrap = true
-  images = ['images/hero.png']
-  mathJaxInitialize = '{}'
-  mermaidInitialize = '{ "securityLevel": "loose" }'
-  mermaidZoom = true
-  ordersectionsby = 'weight'
-  showVisitedLinks = true
-  titleSeparator = '::'
-
   [params.author]
     name = 'Sören Weber'
 
