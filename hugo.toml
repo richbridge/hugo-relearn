@@ -10,103 +10,118 @@ title = "梵刹 - 个人学习心得分享"
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "relearn"
 
-[outputs]
-  # add `search` to the home to support Lunr search; This is a mandatory setting
-  # for the side wide search functionality
-  # add `searchpage` to the home to create a dedicated searchpage
-  # add `print` to home, section and page to activate the feature to print whole
-  # chapters
-  home = ["html", "rss", "print", "search", "searchpage"]
-  section = ["html", "rss", "print"]
-  page = ["html", "rss", "print"]
+[params]
+  additionalContentLanguage = ['en']
+  alwaysopen = ''
+  breadcrumbSeparator = '>'
+  collapsibleMenu = true
+  customMathJaxURL = ''
+  customMermaidURL = ''
+  customOpenapiURL = ''
+  disableAnchorCopy = false
+  disableAnchorScrolling = false
+  disableAssetsBusting = false
+  disableBreadcrumb = false
+  disableDefaultRelref = false
+  disableExplicitIndexURLs = false
+  disableGeneratorVersion = false
+  disableHoverBlockCopyToClipBoard = false
+  disableInlineCopyToClipBoard = true
+  disableLandingPageButton = true
+  disableLanguageSwitchingButton = false
+  disableMathJax = true
+  disableMermaid = true
+  disableNextPrev = false
+  disableOpenapi = true
+  disableRandomIds = false
+  disableRootBreadcrumb = true
+  disableSearch = false
+  disableSearchHiddenPages = false
+  disableSeoHiddenPages = true
+  disableShortcutsTitle = false
+  disableTagHiddenPages = false
+  disableTermBreadcrumbs = false
+  disableToc = false
+  editURL = 'https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/${FilePath}'
+  externalLinkTarget = '_self'
+  highlightWrap = true
+  images = ['images/hero.png']
+  mathJaxInitialize = '{}'
+  mermaidInitialize = '{ "securityLevel": "loose" }'
+  mermaidZoom = true
+  ordersectionsby = 'weight'
+  showVisitedLinks = true
+  titleSeparator = '::'
 
-# showcase of the menu shortcuts; you can use relative URLs linking
-# to your content or use fully-qualified URLs to link outside of
-# your project
-[languages]
-  [languages.en]
-    title = "Hugo Relearn Theme"
-    weight = 1
-    languageCode = "en"
-    languageName = "English"
-    # Language dependent settings:
-    # Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-    #contentDir = "content/en"
-    [languages.en.params]
-      landingPageName = "<i class='fa-fw fas fa-home'></i> Home"
+  [params.author]
+    name = 'Sören Weber'
 
-  [[languages.en.menu.shortcuts]]
-    name = "<i class='fa-fw fab fa-github'></i> GitHub repo"
-    identifier = "ds"
-    url = "https://github.com/McShelby/hugo-theme-relearn"
-    weight = 10
+  [params.image]
+    errorlevel = 'error'
 
-  [[languages.en.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-camera'></i> Showcases"
-    pageRef = "showcase/"
-    weight = 20
+  [params.imageEffects]
+    border = true
+    lazy = true
+    lightbox = true
+    shadow = false
 
-  [[languages.en.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-bullhorn'></i> Credits"
-    pageRef = "more/credits/"
-    weight = 30
+  [params.include]
+    errorlevel = 'error'
 
-  [[languages.en.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-tags'></i> Tags"
-    pageRef = "tags/"
-    weight = 40
+  [params.link]
+    errorlevel = 'error'
 
-  [[languages.en.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-layer-group'></i> Categories"
-    pageRef = "categories/"
-    weight = 50
+  [params.openapi]
+    errorlevel = 'error'
 
-  # this is ourrr way t' showcase th' multilang settings by
-  # doing autotrrranlat'n of th' english content; we are
-  # lazy and don't supporrt furrrther trrranslations; arrr,
-  # don't take it t' serrrious, fello'; it's prrretty hacky and:
-  # NOT MEANT FER PRRRODUCTION! ARRR!
+  [params.social]
+    facebook_admin = ''
+    twitter = ''
 
-  [languages.pir]
-    title = "Cap'n Hugo Relearrrn Theme"
-    weight = 2
-    # It would be more standard compliant to have the language key also
-    # named art-x-pir but that would require to rename all files
-    languageCode = "art-x-pir"
-    languageDirection = "rtl"
-    languageName = "Arrr! ☠ Pirrrates ☠"
-    # Language dependent settings:
-    # Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-    #contentDir = "content/pir"
-    [languages.pir.params]
-      landingPageName = "<i class='fa-fw fas home'></i> Arrr! Home"
+  [[params.themeVariant]]
+    auto = []
+    identifier = 'relearn-auto'
+    name = 'Relearn Light/Dark'
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fab fa-github'></i> GitHub repo"
-    identifier = "ds"
-    url = "https://github.com/McShelby/hugo-theme-relearn"
-    weight = 10
+  [[params.themeVariant]]
+    identifier = 'relearn-light'
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-camera'></i> Showcases"
-    pageRef = "showcase/"
-    weight = 20
+  [[params.themeVariant]]
+    identifier = 'relearn-dark'
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-bullhorn'></i> Crrredits"
-    pageRef = "more/credits/"
-    weight = 30
+  [[params.themeVariant]]
+    identifier = 'relearn-bright'
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-tags'></i> Arrr! Tags"
-    pageRef = "tags/"
-    weight = 40
+  [[params.themeVariant]]
+    auto = ['zen-light', 'zen-dark']
+    identifier = 'zen-auto'
+    name = 'Zen Light/Dark'
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-layer-group'></i> Categorrries"
-    pageRef = "categories/"
-    weight = 50
+  [[params.themeVariant]]
+    identifier = 'zen-light'
 
+  [[params.themeVariant]]
+    identifier = 'zen-dark'
+
+  [[params.themeVariant]]
+    auto = ['learn', 'neon']
+    identifier = 'retro-auto'
+    name = 'Retro Learn/Neon'
+
+  [[params.themeVariant]]
+    identifier = 'neon'
+
+  [[params.themeVariant]]
+    identifier = 'learn'
+
+  [[params.themeVariant]]
+    identifier = 'blue'
+
+  [[params.themeVariant]]
+    identifier = 'green'
+
+  [[params.themeVariant]]
+    identifier = 'red'
 
 
 
