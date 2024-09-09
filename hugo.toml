@@ -46,7 +46,7 @@ summaryLength = 10
   [markup.highlight]
     # line numbers in a table layout will shift if code is wrapping, so better
     # not use it; visually both layouts have the same look and behavior
-    lineNumbersInTable = false
+    # lineNumbersInTable = false
 
     # the shipped variants come with their own modified chroma syntax highlighting
     # stylesheets which are linked in your generated HTML pages; you can use Hugo to generate
