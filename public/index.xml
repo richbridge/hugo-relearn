@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>梵刹 - 个人学习心得分享</title>
+    <title>Hugo Relearn Theme :: 梵刹 - 个人学习心得分享</title>
     <link>//localhost:1313/index.html</link>
-    <description></description>
+    <description>A theme for Hugo designed for documentation.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cap&#39;n Hugo Relearrrn Theme</title>
+      <link>//localhost:1313/_index.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/_index.pir/index.html</guid>
+      <description>A theme fer Cap&#39;n Hugo designed fer documentat&#39;n.</description>
+    </item>
   </channel>
 </rss>
