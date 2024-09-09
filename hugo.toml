@@ -9,3 +9,107 @@ title = "梵刹 - 个人学习心得分享"
 
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "relearn"
+
+[outputs]
+  # add `search` to the home to support Lunr search; This is a mandatory setting
+  # for the side wide search functionality
+  # add `searchpage` to the home to create a dedicated searchpage
+  # add `print` to home, section and page to activate the feature to print whole
+  # chapters
+  home = ["html", "rss", "print", "search", "searchpage"]
+  section = ["html", "rss", "print"]
+  page = ["html", "rss", "print"]
+
+# showcase of the menu shortcuts; you can use relative URLs linking
+# to your content or use fully-qualified URLs to link outside of
+# your project
+[languages]
+  [languages.en]
+    title = "Hugo Relearn Theme"
+    weight = 1
+    languageCode = "en"
+    languageName = "English"
+    # Language dependent settings:
+    # Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+    #contentDir = "content/en"
+    [languages.en.params]
+      landingPageName = "<i class='fa-fw fas fa-home'></i> Home"
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fa-fw fab fa-github'></i> GitHub repo"
+    identifier = "ds"
+    url = "https://github.com/McShelby/hugo-theme-relearn"
+    weight = 10
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-camera'></i> Showcases"
+    pageRef = "showcase/"
+    weight = 20
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-bullhorn'></i> Credits"
+    pageRef = "more/credits/"
+    weight = 30
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-tags'></i> Tags"
+    pageRef = "tags/"
+    weight = 40
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-layer-group'></i> Categories"
+    pageRef = "categories/"
+    weight = 50
+
+  # this is ourrr way t' showcase th' multilang settings by
+  # doing autotrrranlat'n of th' english content; we are
+  # lazy and don't supporrt furrrther trrranslations; arrr,
+  # don't take it t' serrrious, fello'; it's prrretty hacky and:
+  # NOT MEANT FER PRRRODUCTION! ARRR!
+
+  [languages.pir]
+    title = "Cap'n Hugo Relearrrn Theme"
+    weight = 2
+    # It would be more standard compliant to have the language key also
+    # named art-x-pir but that would require to rename all files
+    languageCode = "art-x-pir"
+    languageDirection = "rtl"
+    languageName = "Arrr! ☠ Pirrrates ☠"
+    # Language dependent settings:
+    # Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+    #contentDir = "content/pir"
+    [languages.pir.params]
+      landingPageName = "<i class='fa-fw fas home'></i> Arrr! Home"
+
+  [[languages.pir.menu.shortcuts]]
+    name = "<i class='fa-fw fab fa-github'></i> GitHub repo"
+    identifier = "ds"
+    url = "https://github.com/McShelby/hugo-theme-relearn"
+    weight = 10
+
+  [[languages.pir.menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-camera'></i> Showcases"
+    pageRef = "showcase/"
+    weight = 20
+
+  [[languages.pir.menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-bullhorn'></i> Crrredits"
+    pageRef = "more/credits/"
+    weight = 30
+
+  [[languages.pir.menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-tags'></i> Arrr! Tags"
+    pageRef = "tags/"
+    weight = 40
+
+  [[languages.pir.menu.shortcuts]]
+    name = "<i class='fa-fw fas fa-layer-group'></i> Categorrries"
+    pageRef = "categories/"
+    weight = 50
+
+
+
+
+
+
+
