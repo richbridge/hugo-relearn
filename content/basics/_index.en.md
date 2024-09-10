@@ -1,6 +1,7 @@
 +++
 archetype = "chapter"
 title = "Basics"
+ordersectionsby = "title"
 weight = 1
 +++
 
